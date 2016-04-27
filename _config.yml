@@ -6,16 +6,16 @@
 # 'jekyll serve'. If you change this file, please restart the server process.
 
 # Site settings
-title: n0pe.org
-email: arthur@tuta.io
+title: Blog Title
+email: email@example.org
 
 description: > # this means to ignore newlines until "baseurl:"
-  The Home of Arthur Reeder
+  Add something about your site here
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site
 
-twitter: arthursucks
-github: arthursucks
+twitter: user
+github: user
 
 # Build settings
 markdown: kramdown
