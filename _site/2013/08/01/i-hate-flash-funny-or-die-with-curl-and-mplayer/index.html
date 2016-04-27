@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="">
+
+    <title>I hate flash : Funny or Die with Curl and Mplayer</title>
+
+<link rel="stylesheet" href="/css/pure-min.css">
+<link rel="stylesheet" href="/css/grids-responsive-min.css">
+<link rel="stylesheet" href="/css/blog.css">
+
+</head>
+
+
+<body>
+
+<div id="layout" class="pure-g">
+
+    <div class="sidebar pure-u-1 pure-u-md-1-4">
+        <div class="header">
+						<a href="/"><img width="192" src="/img/me.jpg"></a>
+            <h1 class="brand-title"><a class="site-title" href="/">n0pe.org</a></h1>
+            <h2 class="brand-tagline">The Home of Arthur Reeder
+</h2>
+
+            <nav class="nav">
+                <ul class="nav-list">
+        
+          
+                    <li class="nav-item">
+                        <a class="pure-button page-link" href="/about/">About</a>
+                    </li>
+          
+        
+          
+        
+          
+        
+          
+                    <li class="nav-item">
+                        <a class="pure-button page-link" href="/music/">Music</a>
+                    </li>
+          
+        
+          
+                    <li class="nav-item">
+                        <a class="pure-button page-link" href="/pulp-fiction-chronological-cut/">Pulp Fiction: The Chronological Cut</a>
+                    </li>
+          
+        
+          
+                    <li class="nav-item">
+                        <a class="pure-button page-link" href="/tos/">Terms of Service</a>
+                    </li>
+          
+        
+                </ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+
+
+        <div class="content pure-u-1 pure-u-md-3-4">
+        <div>
+            <!-- A wrapper for all the blog posts -->
+            <div class="posts">
+                <h1 class="content-subhead">Aug 1, 2013</h1>
+
+                <!-- A single blog post -->
+                <section class="post">
+                    <header class="post-header">
+                        <img class="post-avatar" height="48" width="48" src="/img/me.jpg">
+
+                        <h2 class="post-title">I hate flash : Funny or Die with Curl and Mplayer</h2>
+
+                        <p class="post-meta">
+                            
+                        </p>
+                    </header>
+
+                    <div class="post-description">
+												<p><img src="/images/funny_or_die_mplayer.jpg" alt="" /></p>
+
+<p>I did a post earlier this week about <a href="/2013/06/watching-youtube-from-terminal/">watching YouTube videos with Mplayer</a> and I found that comedy site Funny or Die also also has high definition videos that can be played in mplayer.</p>
+
+<p>For this video I’ll be using the Cheese &amp; Chong read the Bible video.  It’s pretty funny.  We need to make sure “curl” is added from the repository.</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>curl http://www.funnyordie.com/videos/7e64d0be37/cheech-chong-read-the-bible | grep mp4
+</code></pre>
+</div>
+
+<p>This will push out a lot of data but only the lines with “mp4″ in them.  The line we’re looking for is:</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>http://vo.fod4.com/v/7e64d0be37/v110.mp4
+</code></pre>
+</div>
+
+<p>Above it you’ll also see a list of video bitrates:</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>110,200,400,600,1200,1800,2500
+</code></pre>
+</div>
+
+<p>By changing the number to the proper bitrate you can get the better quality video.</p>
+
+<p>All that’s left is to load it into mplayer.</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>mplayer http://vo.fod4.com/v/7e64d0be37/v2500.mp4
+</code></pre>
+</div>
+
+<p>No need for flash.</p>
+
+                    </div>
+                </section>
+            </div>
+
+
+
+    <div class="footer">
+                <div class="pure-menu pure-menu-horizontal">
+                    <ul>
+                        <li class="pure-menu-item"><a href="https://github.com/arthursucks" class="pure-menu-link">Github</a></li>
+                        <li class="pure-menu-item"><a href="https://twitter.com/arthursucks" class="pure-menu-link">Twitter</a></li>
+                        <li class="pure-menu-item"><p class="rss-subscribe"><a href="/feed.xml">RSS</a></p></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+  </body>
+
+</html>

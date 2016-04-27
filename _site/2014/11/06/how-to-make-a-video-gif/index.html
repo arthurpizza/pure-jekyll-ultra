@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="">
+
+    <title>How to Make a Video &quot;GIF&quot;</title>
+
+<link rel="stylesheet" href="/css/pure-min.css">
+<link rel="stylesheet" href="/css/grids-responsive-min.css">
+<link rel="stylesheet" href="/css/blog.css">
+
+</head>
+
+
+<body>
+
+<div id="layout" class="pure-g">
+
+    <div class="sidebar pure-u-1 pure-u-md-1-4">
+        <div class="header">
+						<a href="/"><img width="192" src="/img/me.jpg"></a>
+            <h1 class="brand-title"><a class="site-title" href="/">n0pe.org</a></h1>
+            <h2 class="brand-tagline">The Home of Arthur Reeder
+</h2>
+
+            <nav class="nav">
+                <ul class="nav-list">
+        
+          
+                    <li class="nav-item">
+                        <a class="pure-button page-link" href="/about/">About</a>
+                    </li>
+          
+        
+          
+        
+          
+        
+          
+                    <li class="nav-item">
+                        <a class="pure-button page-link" href="/music/">Music</a>
+                    </li>
+          
+        
+          
+                    <li class="nav-item">
+                        <a class="pure-button page-link" href="/pulp-fiction-chronological-cut/">Pulp Fiction: The Chronological Cut</a>
+                    </li>
+          
+        
+          
+                    <li class="nav-item">
+                        <a class="pure-button page-link" href="/tos/">Terms of Service</a>
+                    </li>
+          
+        
+                </ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+
+
+        <div class="content pure-u-1 pure-u-md-3-4">
+        <div>
+            <!-- A wrapper for all the blog posts -->
+            <div class="posts">
+                <h1 class="content-subhead">Nov 6, 2014</h1>
+
+                <!-- A single blog post -->
+                <section class="post">
+                    <header class="post-header">
+                        <img class="post-avatar" height="48" width="48" src="/img/me.jpg">
+
+                        <h2 class="post-title">How to Make a Video "GIF"</h2>
+
+                        <p class="post-meta">
+                            
+                        </p>
+                    </header>
+
+                    <div class="post-description">
+												<p><img src="/images/make-a-video-gif.jpg" alt="" /></p>
+
+<p>It seems to be all the rage these days.</p>
+
+<p>A video “gif” is a silent video embedded to a site in loop mode. I guess the audio is an optional thing but most go without it.</p>
+
+<h2 id="step-one-prepare-the-video-file">Step One: Prepare the video file</h2>
+
+<p>Use your favorite video editor to trim your video down to just a few seconds. To be an awesome looping “gif”, try your best to make it look seamless. I used kdenlive but almost any modern video editor will work. Render it out to either mp4 (h264) or webm (vp8) or both if you’d like to keep compatibility.</p>
+
+<h2 id="step-two-the-code">Step Two: The Code</h2>
+
+<p>It’s pretty easy. This even works on WordPress.</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>&lt;video autoplay="autoplay" loop="loop" width="480" height="480"&gt;
+  &lt;source src="loop.webm" type="video/webm" /&gt;
+&lt;/video&gt;
+</code></pre>
+</div>
+
+<p>If you want to add support for h264.</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>&lt;video autoplay="autoplay" loop="loop" width="480" height="480"&gt;
+  &lt;source src="loop.webm" type="video/webm" /&gt;
+  &lt;source src="loop.mp4" type="video/mp4" /&gt;
+&lt;/video&gt;
+</code></pre>
+</div>
+
+<h2 id="enjoy-your-creation">Enjoy your creation!</h2>
+
+<p>Now obviously I don’t expect everyones to be as awesome as mine but I’m sure you’ll figure it out.</p>
+
+                    </div>
+                </section>
+            </div>
+
+
+
+    <div class="footer">
+                <div class="pure-menu pure-menu-horizontal">
+                    <ul>
+                        <li class="pure-menu-item"><a href="https://github.com/arthursucks" class="pure-menu-link">Github</a></li>
+                        <li class="pure-menu-item"><a href="https://twitter.com/arthursucks" class="pure-menu-link">Twitter</a></li>
+                        <li class="pure-menu-item"><p class="rss-subscribe"><a href="/feed.xml">RSS</a></p></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+  </body>
+
+</html>

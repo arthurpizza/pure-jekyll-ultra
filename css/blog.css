@@ -177,3 +177,14 @@ h3 {
 .header img {
   border-radius: 100%;
 }
+
+/* Stupid Images */
+
+.post img {
+  max-width: 100%;
+}
+
+video {
+	max-width: 100%;
+	height: auto;
+}

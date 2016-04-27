@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Installing ADB on any Ubuntu based system is as simple as adding the ‘android-tools-adb‘ package. You can also add the package through the command line:">
+
+    <title>The awesomeness of ADB</title>
+
+<link rel="stylesheet" href="/css/pure-min.css">
+<link rel="stylesheet" href="/css/grids-responsive-min.css">
+<link rel="stylesheet" href="/css/blog.css">
+
+</head>
+
+
+<body>
+
+<div id="layout" class="pure-g">
+
+    <div class="sidebar pure-u-1 pure-u-md-1-4">
+        <div class="header">
+						<a href="/"><img width="192" src="/img/me.jpg"></a>
+            <h1 class="brand-title"><a class="site-title" href="/">n0pe.org</a></h1>
+            <h2 class="brand-tagline">The Home of Arthur Reeder
+</h2>
+
+            <nav class="nav">
+                <ul class="nav-list">
+        
+          
+                    <li class="nav-item">
+                        <a class="pure-button page-link" href="/about/">About</a>
+                    </li>
+          
+        
+          
+        
+          
+        
+          
+                    <li class="nav-item">
+                        <a class="pure-button page-link" href="/music/">Music</a>
+                    </li>
+          
+        
+          
+                    <li class="nav-item">
+                        <a class="pure-button page-link" href="/pulp-fiction-chronological-cut/">Pulp Fiction: The Chronological Cut</a>
+                    </li>
+          
+        
+          
+                    <li class="nav-item">
+                        <a class="pure-button page-link" href="/tos/">Terms of Service</a>
+                    </li>
+          
+        
+                </ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+
+
+        <div class="content pure-u-1 pure-u-md-3-4">
+        <div>
+            <!-- A wrapper for all the blog posts -->
+            <div class="posts">
+                <h1 class="content-subhead">Dec 4, 2012</h1>
+
+                <!-- A single blog post -->
+                <section class="post">
+                    <header class="post-header">
+                        <img class="post-avatar" height="48" width="48" src="/img/me.jpg">
+
+                        <h2 class="post-title">The awesomeness of ADB</h2>
+
+                        <p class="post-meta">
+                            
+                        </p>
+                    </header>
+
+                    <div class="post-description">
+												<p>Installing <a href="http://wiki.cyanogenmod.org/wiki/ADB">ADB</a> on any Ubuntu based system is as simple as adding the ‘<a href="apt://android-tools-adb">android-tools-adb</a>‘ package. You can also add the package through the command line:</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>sudo apt-get install android-tools-adb
+</code></pre>
+</div>
+
+<p>Once installed you should make sure your cellphone ‘Android Debugging’ is switched on. Then it’s as simple as:</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>sudo adb devices
+</code></pre>
+</div>
+
+<p>This should find and mount your phone. This opens up a lot of awesome options like the ability to push and pull files from the phone. You can use:</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>adb shell
+ls
+</code></pre>
+</div>
+
+<p>To open a minimal shell window into your hardware. Here are some quick examples I use:</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>adb pull sdcard/downloads/happy.jpg ~/happy.jpg
+adb push ~/Downloads/movie.mp4 sdcard/Movies/
+</code></pre>
+</div>
+
+<p>When you’re done just a quick:</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>sudo adb kill-server
+</code></pre>
+</div>
+
+<p>Unmounts the hardware. From what I can tell you can only use one device per session. However their might be much more advanced steps I’m missing. Hope this gets you started.</p>
+
+                    </div>
+                </section>
+            </div>
+
+
+
+    <div class="footer">
+                <div class="pure-menu pure-menu-horizontal">
+                    <ul>
+                        <li class="pure-menu-item"><a href="https://github.com/arthursucks" class="pure-menu-link">Github</a></li>
+                        <li class="pure-menu-item"><a href="https://twitter.com/arthursucks" class="pure-menu-link">Twitter</a></li>
+                        <li class="pure-menu-item"><p class="rss-subscribe"><a href="/feed.xml">RSS</a></p></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+  </body>
+
+</html>
